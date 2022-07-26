@@ -1,7 +1,6 @@
-import turtle
 from food import Food
 from snake import Snake
-from turtle import Screen
+from turtle import Screen, ycor
 from time import sleep
 from scoreboard import Scoreboard
 
@@ -11,7 +10,7 @@ screen.setup(width=600, height=600)
 screen.bgcolor('black')
 screen.title('Snake game')
 screen.tracer(0)
- 
+
 
 scorebaord = Scoreboard()
 snake = Snake()
@@ -37,12 +36,11 @@ while game_on:
         food.new_loation()
         scorebaord.score_increase()
     # close game window if user hits the wall
-    if -280 < snake.snake_head.xcor() > 280 or -280 < snake.snake_head.ycor() > 280:
-        print("you loose")  
-        screen.bye()
-        break
+    if snake.snake_head.xcor() < -280 or snake.snake_head.xcor() > 280 or snake.snake_head.ycor() < -280 or snake.snake_head.ycor() > 280:
+        scorebaord.reset()
+        snake.game_reset()
 
     for segment in snake.segment[1:]:
         if snake.snake_head.distance(segment) < 10:
-            game_on = False
-            print(f"You Loose, Final Score:{scorebaord.score}")
+            scorebaord.reset()
+            snake.game_reset()

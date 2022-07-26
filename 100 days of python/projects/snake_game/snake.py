@@ -1,7 +1,8 @@
 from turtle import Turtle
 START_POS = [(0, 0), (-20, 0), (-40, 0)]
 
-class Snake:
+class Snake():
+
         
     def __init__(self) -> None:
         self.segment=[]
@@ -13,7 +14,12 @@ class Snake:
         for positions in START_POS:
             self.add_segment(positions)
 
-
+    def game_reset(self):
+        
+        for turtle_inst in self.segment[3:]:
+            turtle_inst.reset()
+        self.segment[3:]=[]
+        self.snake_head.goto(START_POS[0])
 
 
     def add_segment(self,positions):
