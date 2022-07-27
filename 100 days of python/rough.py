@@ -1,11 +1,7 @@
-path=r"C:\Users\GANESH\Desktop\my_text.txt"
+import pandas as pd
+
+data=pd.read_csv("weather_data.csv")
+print(data["day"])
 
 
-
-with open(path) as text:
-    content=text.read()
-    print(content)
-
-
-with open("game_data.txt") as t:
-    print(t.read())
+print(data.describe())

@@ -1,4 +1,11 @@
 
+def input_names(name):
+    with open(r"100 days of python\projects\mail_merger\names.txt", mode="a") as name_file:
+        name_file.write(f"\n{name}")
+    
+
+
+
 
 with open(r'100 days of python\projects\mail_merger\names.txt') as data:
     r=data.read()
