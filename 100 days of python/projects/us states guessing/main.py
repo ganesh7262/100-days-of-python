@@ -29,7 +29,8 @@ while len(guesse_states)<50:
         guesse_states.append(user_ans)
 
 
-not_guessed=states_data[states_data["state"].isin(list(set(all_states)-set(guesse_states)))].to_csv("not_guessed")
+not_guessed=pd.DataFrame(list(set(all_states)-set(guesse_states))).to_csv("states to learn")
+
 print(not_guessed)
 
 
