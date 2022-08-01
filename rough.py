@@ -17,17 +17,21 @@ def on_button_click():
 
 # Label
 my_label = tkinter.Label(text="New Text", font=("Arial", 20, "bold"))
-my_label.pack()
+my_label.grid(column=0,row=0)
 
 
 # Button
 
 
-button = tkinter.Button(text="click me", command=on_button_click)
-button.pack()
+button1 = tkinter.Button(text="button1", command=on_button_click)
+button1.grid(column=1,row=1)
 
 
+buttomn2=tkinter.Button(text="button2")
+buttomn2.grid(column=2,row=0)
+# Input
 inp = tkinter.Entry()
-inp.pack()
+inp.grid(column=4,row=3)
+
 
 window.mainloop()
