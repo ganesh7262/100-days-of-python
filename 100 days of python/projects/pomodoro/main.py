@@ -1,7 +1,6 @@
 import tkinter
 
 
-from pyparsing import rest_of_line
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
