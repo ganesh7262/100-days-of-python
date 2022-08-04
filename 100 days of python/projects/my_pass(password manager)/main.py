@@ -20,6 +20,8 @@ def add():
     with open(r'C:\Users\ganes\OneDrive\Documents\GitHub\100-days-of-python\Pass_data.txt','a') as pass_data:
         web,email_u,pas=get_values()
         pass_data.write(f'\n{web} | {email_u} | {pas}')
+        website_inp.delete(0,tkinter.END)
+        password_inp.delete(0,tkinter.END)
         
 
 # ---------------------------- UI SETUP ------------------------------- #
