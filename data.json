@@ -1,4 +1,4 @@
-hehe={
+{
     "amazon": {
         "email": "ganeshshinde@gmail.com",
         "password": "6Bgl95RZ9"
@@ -12,7 +12,3 @@ hehe={
         "password": "WzVAay5Ru"
     }
 }
-
-req='amazon'
-
-print(hehe[req]["password"])
