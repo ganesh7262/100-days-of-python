@@ -1,0 +1,15 @@
+/* tag selector */
+h1{
+    color: red;
+    font-size: 100px;
+}
+
+/* class selector */
+
+.bacon{
+    background-color: green;
+}
+
+.o7{
+    background-color: red;
+}
