@@ -10,9 +10,21 @@ hr {
     width: 5%;
 }
 
+
+
+
 img {
     height: 170;
+    border-radius: 150px;
 }
+
+.pfp:hover{
+    transform: scale(1.25);
+}
+.name-heading:hover{
+    transform: scale(2);
+}
+
 
 h1{
     color: #161c2b;

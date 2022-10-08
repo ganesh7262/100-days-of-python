@@ -1,0 +1,27 @@
+body{
+    background-color: #14161ded;
+    margin: 0;
+}
+
+
+.top-div img{
+    margin: auto auto;
+    padding-top: 50px;
+    display: block;
+    
+    
+
+}
+
+.mid-div{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+
+.bottom-div{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
