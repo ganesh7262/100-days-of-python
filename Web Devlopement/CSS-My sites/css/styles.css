@@ -1,5 +1,5 @@
 body{
-    background-color: #14161ded;
+    background-color: #000000ed;
     margin: 0;
 }
 
@@ -8,9 +8,10 @@ body{
     margin: auto auto;
     padding-top: 50px;
     display: block;
-    
-    
+}
 
+.top-div-name:hover{
+    transform: scale(1.25);
 }
 
 .mid-div{
@@ -24,4 +25,11 @@ body{
     background-color: green;
     width: 200px;
     height: 200px;
+}
+
+
+.first-hr{
+    height: 1px;
+    border: 0;
+    background-color: black;
 }

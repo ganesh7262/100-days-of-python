@@ -1,6 +1,5 @@
 from turtle import Turtle, hideturtle
 
-from pygments import highlight
 GAME_DATA='game_data.txt'
 
 
