@@ -11,6 +11,7 @@ event_date = [
     for i in driver.find_elements(by=By.CSS_SELECTOR, value=".event-widget ul li time")
 ]
 
+
 event_name = [
     i.text
     for i in driver.find_elements(by=By.CSS_SELECTOR, value=".event-widget ul li a")
