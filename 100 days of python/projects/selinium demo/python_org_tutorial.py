@@ -18,7 +18,7 @@ event_name = [
 ]
 
 event_details = {
-    i: {date: event}
+    i: {"date:": date, "event:": event}
     for i, date, event in zip(range(len(event_date)), event_date, event_name)
 }
 
