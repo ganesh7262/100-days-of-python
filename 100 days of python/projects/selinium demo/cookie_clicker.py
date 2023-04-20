@@ -30,13 +30,16 @@ def buyPerk():
             return
 
 
+STARTTIME = time.time()
+
 money = driver.find_element(by=By.XPATH, value='//*[@id="money"]')
 
 start_time = time.time()
 while True:
+    cookie.click()
+
     if time.time() > start_time + 5:
-        print(driver.find_element(By.XPATH, value='//*[@id="cps"]'))
         buyPerk()
         start_time = time.time()
-
-    cookie.click()
+    elif time.time() > STARTTIME + 300:
+        print(driver.find_element(By.XPATH, value='//*[@id="cps"]'))
