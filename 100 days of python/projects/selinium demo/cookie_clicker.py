@@ -22,7 +22,7 @@ perk_vs_price = {
 
 def buyPerk():
     for i in range(len(perk_vs_price)):
-        if int(money.text) < list(perk_vs_price.keys())[i]:
+        if int(money.text.replace(",", "")) < list(perk_vs_price.keys())[i]:
             perk = driver.find_element(
                 by=By.XPATH, value=perk_vs_price[list(perk_vs_price.keys())[i - 1]]
             )
