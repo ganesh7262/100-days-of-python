@@ -20,6 +20,7 @@ def get_gender(name: str) -> str:
 def get_age(name: str) -> str:
     try:
         response = r.get(url=f"https://api.agify.io?name={name}")
+
         age = response.json()["age"]
         return age
     except Exception as err:
